@@ -153,6 +153,30 @@ src/broker/core.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiMQ.dir/build.make CMakeFiles/LiMQ.dir/src/broker/core.cpp.s
 .PHONY : src/broker/core.cpp.s
 
+src/consumer/core.o: src/consumer/core.cpp.o
+.PHONY : src/consumer/core.o
+
+# target to build an object file
+src/consumer/core.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiMQ.dir/build.make CMakeFiles/LiMQ.dir/src/consumer/core.cpp.o
+.PHONY : src/consumer/core.cpp.o
+
+src/consumer/core.i: src/consumer/core.cpp.i
+.PHONY : src/consumer/core.i
+
+# target to preprocess a source file
+src/consumer/core.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiMQ.dir/build.make CMakeFiles/LiMQ.dir/src/consumer/core.cpp.i
+.PHONY : src/consumer/core.cpp.i
+
+src/consumer/core.s: src/consumer/core.cpp.s
+.PHONY : src/consumer/core.s
+
+# target to generate assembly for a file
+src/consumer/core.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiMQ.dir/build.make CMakeFiles/LiMQ.dir/src/consumer/core.cpp.s
+.PHONY : src/consumer/core.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -177,6 +201,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiMQ.dir/build.make CMakeFiles/LiMQ.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/producer/core.o: src/producer/core.cpp.o
+.PHONY : src/producer/core.o
+
+# target to build an object file
+src/producer/core.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiMQ.dir/build.make CMakeFiles/LiMQ.dir/src/producer/core.cpp.o
+.PHONY : src/producer/core.cpp.o
+
+src/producer/core.i: src/producer/core.cpp.i
+.PHONY : src/producer/core.i
+
+# target to preprocess a source file
+src/producer/core.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiMQ.dir/build.make CMakeFiles/LiMQ.dir/src/producer/core.cpp.i
+.PHONY : src/producer/core.cpp.i
+
+src/producer/core.s: src/producer/core.cpp.s
+.PHONY : src/producer/core.s
+
+# target to generate assembly for a file
+src/producer/core.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LiMQ.dir/build.make CMakeFiles/LiMQ.dir/src/producer/core.cpp.s
+.PHONY : src/producer/core.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -189,9 +237,15 @@ help:
 	@echo "... src/broker/core.o"
 	@echo "... src/broker/core.i"
 	@echo "... src/broker/core.s"
+	@echo "... src/consumer/core.o"
+	@echo "... src/consumer/core.i"
+	@echo "... src/consumer/core.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/producer/core.o"
+	@echo "... src/producer/core.i"
+	@echo "... src/producer/core.s"
 .PHONY : help
 
 
